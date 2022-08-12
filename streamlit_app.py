@@ -34,7 +34,7 @@ streamlit.text(fruityvice_response)
 #New section for fruit_load_list
 streamlit.header("Fruityvice Fruit Advice!")
 try: 
-	  fruit_choice = streamlit.text_input('What fruit would you like information about?')
+	 fruit_choice = streamlit.text_input('What fruit would you like information about?')
     if not fruit_choice:
         streamlit.error(''Please select a fruit to get infromation.'')
 	  else:
