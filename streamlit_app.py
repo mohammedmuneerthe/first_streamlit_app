@@ -48,3 +48,8 @@ my_cur.execute("select * from fruit_load_list")   #my_cur.execute("SELECT CURREN
 my_data_rows = my_cur.fetchall() #my_data_row = my_cur.fetchone()
 streamlit.header("The fruit load list contains:")   #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 streamlit.dataframe(my_data_rows)    #streamlit.text(my_data_row)
+#adding a fruit insert into table
+add_my_fruit=streamlit.text_input('What fruit would you like add?')
+
+streamlit.write('Thanks for adding', add_my_fruit)
+my_cur.execute("insert into fruit_load_list")
