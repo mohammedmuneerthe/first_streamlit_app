@@ -75,7 +75,7 @@ except URLError as e:
 #######################################
 streamlit.header("Fruityvice Fruit Advice!")
 #snowflake realted function
-def get_fruit load_list():
+def get_fruit_load_list():
 	with my_cnx.cursor() as my_cur:
 		my_cnx.execute("select * from fruit_load_list")
 		return my_cnx.fetchall()
